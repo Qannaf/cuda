@@ -304,6 +304,7 @@ That’s all that is required to execute a function on the GPU!
 __global__ is a CUDA C/C++ keyword meaning 
   1. add() will execute on the device
   2. add() will be called from the host 
+*/
 // File name: add.cu
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
