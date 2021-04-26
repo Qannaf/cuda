@@ -1,6 +1,7 @@
 <p align="center">
   <img width="350" height="197" src="https://img.generation-nt.com/0001657855.jpg">
 </p>
+
 # CUDA
 __This repository contains notes and examples__ to get started Parallel Computing with CUDA. 
 
@@ -298,7 +299,7 @@ That’s all that is required to execute a function on the GPU!
 
 <a name="AdditionontheDevice"></a>
 ### Addition on the Device
-```cpp 
+```cpp
 /*
 __global__ is a CUDA C/C++ keyword meaning 
   1. add() will execute on the device
@@ -323,7 +324,6 @@ int main(void) {
 }
 ```
 
-```
 In this example we use pointers for the variables. `add()` runs on the device, so *a*, *b* and *c* must point to device memory. We need to allocate memory on the GPU using `cudaMemcpy()` method. 
 
 <a name="VectorAdditiononDeviceParallel"></a>
